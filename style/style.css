@@ -1,0 +1,55 @@
+/*<- BASIC LAYOUT STUFF ->*/
+body {
+    background-image: url(../img/flannel.jpg);
+}
+
+#hello {
+    font: 22px helvetica, sans;
+}
+
+#me {
+    font: 80px "Permanent Marker", cursive;
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+
+#nametag {
+    transform: rotate(-3deg);
+    margin: 70px 0 10% 5%;
+    padding-bottom: 2%;
+    border-radius: 12px;
+    max-width: 410px;
+}
+
+#hello-world::before{ 
+    content: "Hello there, world!";
+}
+
+#statement::before {
+    content: "I'm Tim -- just another guy who likes to build things with code that live on the web. Reach out. Let's be pals!";
+}
+
+#hello-world::before{
+    opacity: 0;
+    animation: 3s fadeIn;
+    animation-fill-mode: forwards;
+    transition: opacity 2s; 
+    font: 25px "Permanent Marker", cursive;
+}
+
+#statement::before {
+    opacity: 0;
+    animation: 3s fadeIn;
+    animation-fill-mode: forwards;
+    transition: opacity 2s;
+    font: 25px "Permanent Marker", cursive;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
